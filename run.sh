@@ -1,5 +1,5 @@
 #!/bin/bash
-docker run --rm -it -v ~/work/ws/github/shikshan/low-level:/workspace/code ospatil/alpine-gcc bash
+docker run --rm -it -v "$(PWD)":/code ospatil/alpine-gcc bash
 
 # To find out glibc version
 # ldd --version
