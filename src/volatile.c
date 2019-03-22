@@ -1,11 +1,13 @@
 /*
 Program to demonstrate the behaviour of volatile keyword.
 
-Compile using (-c flag states compile or assemble but don't link and -o provides output file):
-gcc -g -c src/volatile.c -o out/volatile.o
-
-Then inspect the output using:
-objdump -d -M intel -S out/volatile.o
+1. Use -O0 or -O2 as needed
+  gcc -g -O2 -std=c11 -masm=intel -c -fverbose-asm -Wa,-adhlns src/volatile.c > out/volatile.s
+OR
+2. Compile using (-c flag states compile or assemble but don't link and -o provides output file):
+  gcc -g -std=c11 -O2 -c src/volatile.c -o out/volatile.o
+  Then inspect the output using:
+  objdump -D -M intel -S out/volatile.o > out/volatile.s
 
 For details of various flags for above commands see:
 https://stackoverflow.com/questions/1289881/using-gcc-to-produce-readable-assembly/1289907#1289907
@@ -18,13 +20,14 @@ https://stackoverflow.com/a/2987916/529174
 int main(void)
 {
   int ordinary = 0;
-  volatile int vol = 9;
-
   ordinary++;
-  vol++;
-
   ordinary++;
-  vol++;
+  printf("Value of ordinary = %d\n", ordinary);
+
+  // volatile int vol = 9;
+  // vol++;
+  // vol++;
+  // printf("Value of volatile = %d\n", vol);
 }
 
 /* relevant part of the output.
