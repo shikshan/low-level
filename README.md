@@ -5,12 +5,13 @@ Dabbling in low-level C and assembly for learning purposes.
 ## Links
 
 ### Top links
-  * <https://medium.com/cracking-the-data-science-interview/how-operating-systems-work-10-concepts-you-should-know-as-a-developer-8d63bb38331f>
-  * <https://eli.thegreenplace.net/2011/02/04/where-the-top-of-the-stack-is-on-x86>
-  * <https://eli.thegreenplace.net/2011/09/06/stack-frame-layout-on-x86-64/>
-  * <https://blog.packagecloud.io/eng/2016/04/05/the-definitive-guide-to-linux-system-calls/>
-  * [Compiler Explorer](https://godbolt.org/) - Outstanding online tool that shows colour-coded source and compiler output side-by-side
-  * Very advanced - <http://blog.k3170makan.com/2018/10/introduction-to-elf-format-part-vi_18.html>
+
+* <https://medium.com/cracking-the-data-science-interview/how-operating-systems-work-10-concepts-you-should-know-as-a-developer-8d63bb38331f>
+* <https://eli.thegreenplace.net/2011/02/04/where-the-top-of-the-stack-is-on-x86>
+* <https://eli.thegreenplace.net/2011/09/06/stack-frame-layout-on-x86-64/>
+* <https://blog.packagecloud.io/eng/2016/04/05/the-definitive-guide-to-linux-system-calls/>
+* [Compiler Explorer](https://godbolt.org/) - Outstanding online tool that shows colour-coded source and compiler output side-by-side
+* Very advanced - <http://blog.k3170makan.com/2018/10/introduction-to-elf-format-part-vi_18.html>
 
 ### Assembly
 
