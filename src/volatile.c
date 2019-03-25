@@ -24,10 +24,10 @@ int main(void)
   ordinary++;
   printf("Value of ordinary = %d\n", ordinary);
 
-  // volatile int vol = 9;
-  // vol++;
-  // vol++;
-  // printf("Value of volatile = %d\n", vol);
+  volatile int vol = 9;
+  vol++;
+  vol++;
+  printf("Value of volatile = %d\n", vol);
 }
 
 /* relevant part of the output.
